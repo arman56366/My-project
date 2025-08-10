@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /private/
+Disallow: /login/
+Allow: /
+Sitemap: https://www.stapvarord.am/sitemap.xml

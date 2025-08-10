@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# Принудительное использование HTTPS и редирект с www на non-www
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\.stapvarord\.am$ [NC]
+RewriteRule ^ https://stapvarord.am%{REQUEST_URI} [L,R=301]
